@@ -1,11 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Método para imprimir una cantidad de espacios específica.
 void Espacios(int n){
 	while(n--)
 		cout << ' ';
 }
 
+// Método para imprimir el arbolito, dada la altura deseada.
 void Arbolito(int n){
 	Espacios(n);
 	cout << "*\n";
@@ -22,11 +24,13 @@ void Arbolito(int n){
 		cout << " | |\n";
 		return;
 	}
+	// Si n = 1.
 	cout << " |\n";
 }
 
 int main(){
 	int n;
+	// Ingresar la altura para el arbolito.
 	cin >> n;
 	Arbolito(n);
 }
